@@ -1,0 +1,200 @@
+{
+  "generated": "2026-10-04T02:54:43+08:00",
+  "prereg": "notes/PREREG_k2000_threeseed_20261004.md (b5cf451)",
+  "script_sha256": "a73279220a2b97300ba6176c8d4a888fb903eea02718e772c9e52a693bf7ccf2",
+  "inputs_sha256": {
+    "inputs/result_mb1f_ksweep_s01.json": "49c7003f593314eb447b481a265be7c17bbf8fb0de07fb8464464dd50e052a0a",
+    "inputs/result_mb1f_ksweep_s02.json": "2a0ce1b93fe5e0d1c838fa029acdea6595a43391b165e537c0e2ebef194f1dd2",
+    "inputs/result_mb1f_ksweep_s03.json": "6c24fe0f7de07b8ef0a78ed321d93bdacac176820ee3933bdc928db60d333226",
+    "inputs/result_mb1f_ksweep_s05.json": "c100cdc11f31e3db737b01554ac6e838c4b40e269f7e90345be3aad3710ccf9c",
+    "inputs/result_mb1f_ksweep_s07.json": "4f6d99b161d88fcf73b74d539c86cf98ca7469765e1c21ba073d3d789dbbe72a",
+    "inputs/result_mb1f_ksweep_s08.json": "f82c7fb54cec7c445dba1a042c0f20c820a1808daa85372fa2d8286b5f8103ed",
+    "inputs/result_mb1f_ksweep_s09.json": "4327614d0592b2bca04179f6053b2ddc364db4c9a9583f43f6f8b73503b85411",
+    "inputs/result_mb1f_ksweep_s10.json": "1caeca657ad81ccd8724d9fb3730e1ccf1b45e3d94063b3d2d28aa87d914e9b2",
+    "inputs/result_mb1f_ksweep_s11.json": "1ffd6e9915746a11839be15d9c06365bb64a8005e6805838141185d785e8c5dd",
+    "inputs/result_mb1f_ksweep_s13.json": "7d2ca5d1232a260f4ebf88516f636b9543b2218476b8a9bbc8bb6ff5e9b5a21f",
+    "runs/result_st26_rr_seed1_s01.json": "84e626e41e9da867dd8dbc0daa65879b69b073b6e162df8e5055c7a97844f2fd",
+    "runs/result_st26_rr_seed1_s02.json": "903949b5f85e30febd77e3c413719a861e6dd944e2b3cf173f4d5d3a55bbab36",
+    "runs/result_st26_rr_seed1_s03.json": "8a3db4eca381de04b38382c4c2dbcb283139c62e0d88ddbcbbf0f6d78d2ce08d",
+    "runs/result_st26_rr_seed1_s05.json": "767f6774c1e1746c5b0b4e04658f9e70e4a5c4ea51e952114adcebaa29b753e9",
+    "runs/result_st26_rr_seed1_s07.json": "c57bbbbc23d831757e411b00848e77fd3484d28cf959ee0e9817234eb6b0820b",
+    "runs/result_st26_rr_seed1_s08.json": "3a8976303089f05a72852629899ddd0c299c2960af190ff018a116aa39262580",
+    "runs/result_st26_rr_seed1_s09.json": "4f8a3051cc426a99c098d55c3e91b8dd22d7c74b7f13735fb36c41ad16cbd84c",
+    "runs/result_st26_rr_seed1_s10.json": "ead05ee2e4ec5d37aa59dced8846f9a83a063d13511ffa5f85b44918950cae3c",
+    "runs/result_st26_rr_seed1_s11.json": "db519ee36084bf763f1e7bb430adee4d15e24eb02867b4c02084d971e98384da",
+    "runs/result_st26_rr_seed1_s13.json": "8e6b5aa92350ebe2a688688f19505e8b808db74405bd366db0ae8ca2a399b30d",
+    "runs/result_st26_rr_seed2_s01.json": "d8ca0f2951b5d9e6f24cd918be6f83638e6ab87d44f233fec1fd3296986927b3",
+    "runs/result_st26_rr_seed2_s02.json": "e984d9ed0c64974c9f0e3a9d39b806e23edd9cc830cc9e5addb20fbb018eabf6",
+    "runs/result_st26_rr_seed2_s03.json": "92fda3e38e64dc2799dc8f69c58bf1cda2b5c7ab5212fa6f9bf7c43092ed1213",
+    "runs/result_st26_rr_seed2_s05.json": "a57809e042d1ff9802bc1a0200e7d9c4517beb8ebad16b4b5cb7d786ba0af0bf",
+    "runs/result_st26_rr_seed2_s07.json": "11302a926bd2ade5644ab2c07641878b5afb1c40a15ddb1884a364723681698f",
+    "runs/result_st26_rr_seed2_s08.json": "92f86325a81eb4682620649c4a2569e5c565a25be13b672af04e60a2a95405e1",
+    "runs/result_st26_rr_seed2_s09.json": "d94c6b4d322dfa68d14998511674027073cdfd66f4a873fb354cf4daafd7f3d3",
+    "runs/result_st26_rr_seed2_s10.json": "939651e27452cd788f1b7a6531f2d45ff3f17f1f0e95c3232d9dd6782ed3205e",
+    "runs/result_st26_rr_seed2_s11.json": "aa61aae401fc66037a6bc8d8429860b7e6f2e776718d75a9f93b821c8a039cf4",
+    "runs/result_st26_rr_seed2_s13.json": "5e9decde26be9367f1db1c510873eb62d2e9b7b6f3721f70deee603b06d5c30e"
+  },
+  "metric": "rank percentile fm.meanpct; Delta = dynamic_big - conv; k=2000",
+  "bootstrap": "20000 draws, numpy default_rng(0), percentile 2.5/97.5 (mb_conditions.ci draws)",
+  "gate0_prime": {
+    "status": "PASS",
+    "seed0_standard_k2000": {
+      "n": 9,
+      "mean": -0.00733333333333334,
+      "ci95": [
+        -0.013888888888888902,
+        -0.001666666666666668
+      ],
+      "status": "resolved_neg"
+    },
+    "subjects": [
+      "01",
+      "02",
+      "05",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "13"
+    ]
+  },
+  "gate1_prime": {
+    "status": "PASS",
+    "problems": []
+  },
+  "primary_standard_cell": {
+    "subjects": [
+      "01",
+      "02",
+      "05",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "13"
+    ],
+    "per_seed": [
+      {
+        "n": 9,
+        "mean": -0.00733333333333334,
+        "ci95": [
+          -0.013888888888888902,
+          -0.001666666666666668
+        ],
+        "status": "resolved_neg"
+      },
+      {
+        "n": 9,
+        "mean": 0.009000000000000008,
+        "ci95": [
+          -0.001555555555555557,
+          0.020555555555555573
+        ],
+        "status": "not_resolved"
+      },
+      {
+        "n": 9,
+        "mean": 0.002555555555555558,
+        "ci95": [
+          -0.008000000000000007,
+          0.0108888888888889
+        ],
+        "status": "not_resolved"
+      }
+    ],
+    "per_seed_means": [
+      -0.00733333333333334,
+      0.009000000000000008,
+      0.002555555555555558
+    ],
+    "seed_mean": {
+      "n": 9,
+      "mean": 0.0014074074074074089,
+      "ci95": [
+        -0.006148148148148153,
+        0.007851851851851858
+      ],
+      "status": "not_resolved"
+    },
+    "per_subject_seed_mean": {
+      "01": 0.0040000000000000036,
+      "02": 0.00366666666666667,
+      "05": -0.00733333333333334,
+      "07": 0.0006666666666666673,
+      "08": 0.0040000000000000036,
+      "09": 0.017000000000000015,
+      "10": 0.009666666666666676,
+      "11": -0.023666666666666687,
+      "13": 0.0046666666666666705
+    }
+  },
+  "verdict": "WEAKEN",
+  "descriptive_label_only": {
+    "RS_recording_guard_story_split": {
+      "subjects": [
+        "01",
+        "02",
+        "05",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "13"
+      ],
+      "per_seed_means": [
+        -0.002666666666666669,
+        -0.00277777777777778,
+        0.0
+      ],
+      "per_seed_status": [
+        "not_resolved",
+        "not_resolved",
+        "not_resolved"
+      ],
+      "seed_mean": {
+        "n": 9,
+        "mean": -0.0018148148148148166,
+        "ci95": [
+          -0.0064444444444444506,
+          0.002074074074074076
+        ],
+        "status": "not_resolved"
+      }
+    },
+    "SSc_clean_stimulus_guard_story_split": {
+      "subjects": [
+        "01",
+        "02",
+        "05",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "13"
+      ],
+      "per_seed_means": [
+        -0.00277777777777778,
+        -0.00277777777777778,
+        0.00011111111111111121
+      ],
+      "per_seed_status": [
+        "not_resolved",
+        "not_resolved",
+        "not_resolved"
+      ],
+      "seed_mean": {
+        "n": 9,
+        "mean": -0.0018148148148148162,
+        "ci95": [
+          -0.00644444444444445,
+          0.002074074074074076
+        ],
+        "status": "not_resolved"
+      }
+    }
+  }
+}

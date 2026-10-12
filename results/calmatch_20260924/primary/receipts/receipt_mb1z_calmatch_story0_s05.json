@@ -1,0 +1,54 @@
+{
+  "tag": "mb1z_calmatch_story0_s05",
+  "result_file": "result_mb1z_calmatch_story0_s05.json",
+  "result_sha256": "a3208a2e9d864aba8a4a7c9f54f281c1f82b08e78b68c56efcdbbc43f1ab1601",
+  "preflight_sha256": "ff37d29e01c3e37658bed2671d2045807b5e7f3c749dce47fe01e658680f3853",
+  "train_log_sha256": "623e8ad811b6c6f0d3ccf0d0d74409d4a8cf808cdfba7ce120265a461bf7ea51",
+  "pinned_src_sha256": {
+    "eval_metrics.py": "c5b941171aa90103463a7e1e1b937aa1f93c70bce79974c8078cdc1d8140a395",
+    "tokenizers.py": "a4ac90ca93bf7b8d0e27e87ad0c725f418e8e5daabc9786ac577f6077b85481a",
+    "train_infonce.py": "241db65f74ed053873b2daa4c649d311b8781508adca0f2c9c23f289ba9ab475",
+    "train_m1a_seg.py": "c0539cceb19fa49f40c04e1f5852dd05c9dced1d8839af263028fbcd28ebc5ac",
+    "train_mb.py": "1a4953ec15bbb660f3ed098834357fbecdeec852f1d8de6b0fd48780938ee901"
+  },
+  "sbatch_sha256": "c831032c75d375e96e86da29ceea4dfcf47efa00ccdd88e540d1a8198c272054",
+  "seed": 0,
+  "args_echo": {
+    "test_subject": "05",
+    "holdout_story": "0",
+    "eval_story": "",
+    "calib_stories": "1,2",
+    "guard_scope": "stimulus",
+    "klist": [
+      100,
+      500,
+      2000
+    ],
+    "seg_s": 1.0,
+    "layer": 6
+  },
+  "design_log_lines": [
+    "[mb1] PRETRAIN EXCLUDES stories ['0']: train_words 128826",
+    "[mb1] n_ch=208 train_seg=51136 heldsubj_seg=6559 (subject=05)",
+    "[mb1] calibration restricted to stories ['1', '2']",
+    "[mb1] pretrain excludes story 0; EVAL ON story 0 (UNSEEN in pretraining)",
+    "[mb1] split_by=recording guard_scope=stimulus calib_seg=3019 eval_seg=537",
+    "[mb1] eval_seg=537 calib_pool=2719 val=300 k-sweep=[100, 500, 2000]",
+    "[mb1] conv encoder params=2.45M",
+    "[mb1] conv pretrained zero-calib on held subj: top10 x3.30 CI[4.47, 8.75] | top1 x9.42 | medrank 118.0/506 | meanpct 0.709 | shuf x1.0",
+    "[mb1] conv k=100: FM x3.20 CI[4.28, 8.38] shuf x0.7 | SCRATCH x1.04 CI[0.93, 3.35]",
+    "[mb1] conv k=500: FM x4.24 CI[6.33, 10.8] shuf x0.7 | SCRATCH x1.04 CI[0.93, 3.35]",
+    "[mb1] conv k=2000: FM x4.15 CI[6.15, 10.61] shuf x0.3 | SCRATCH x2.07 CI[2.42, 5.77]",
+    "[mb1] dynamic_big encoder params=2.65M",
+    "[mb1] dynamic_big pretrained zero-calib on held subj: top10 x4.24 CI[6.15, 10.8] | top1 x4.71 | medrank 91.0/506 | meanpct 0.741 | shuf x1.0",
+    "[mb1] dynamic_big k=100: FM x5.46 CI[8.19, 13.41] shuf x1.4 | SCRATCH x1.04 CI[0.93, 3.35]",
+    "[mb1] dynamic_big k=500: FM x3.58 CI[5.03, 9.31] shuf x0.9 | SCRATCH x1.04 CI[0.93, 3.35]",
+    "[mb1] dynamic_big k=2000: FM x3.58 CI[5.03, 9.31] shuf x1.1 | SCRATCH x2.07 CI[2.61, 5.96]",
+    "[save] $SCRATCH/project/results/mb/result_mb1z_calmatch_story0_s05.json"
+  ],
+  "elapsed_s_this_invocation": 5016,
+  "job": "18404006_1",
+  "gpu_util_samples_so_far": 355,
+  "gpu_util_mean_so_far": 13.1,
+  "written": "2026-09-24T09:42:06-0400"
+}

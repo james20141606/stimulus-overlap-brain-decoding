@@ -1,0 +1,170 @@
+{
+  "tag": "mb1z_calmatch_story0_s03",
+  "test_subject": "03",
+  "eval_story": "0",
+  "seen_holdout": "3",
+  "calib_stories": "1,2",
+  "seed": 0,
+  "host": "gpu-node",
+  "slurm_job": "18416606",
+  "slurm_array": "18404006",
+  "slurm_task": "1",
+  "time": "2026-09-24T08:13:46-0400",
+  "inputs": {
+    "trial_metadata.tsv": "b36f9652b07638ddc84330444ffdc1f2192d2c15c0efd4971ec8988c0912179e",
+    "ctx": {
+      "path": "$SCRATCH/project/results/m0/masc_gpt2_contextual.npy",
+      "sha256": "ad1e9d83051d190c942afe2d130a6ca36d4229b6bad9ec0f1555aac1b5f04f5c"
+    },
+    "ctx_meta": {
+      "path": "$SCRATCH/project/results/m0/masc_gpt2_contextual_meta.json",
+      "sha256": "268f58f17cffe2544ca9b599053084f225b4086232187750ed6c5f3a59a65534"
+    },
+    "epochs_data.npy": {
+      "size": 32532864128,
+      "mtime": 1777621540,
+      "sha256_first_256MiB": "f0e1b9c8c16a9e479cd3c12619a2568eb223aee6714345eef414eccb9dba0ef9"
+    }
+  },
+  "pinned_src_sha256": {
+    "eval_metrics.py": "c5b941171aa90103463a7e1e1b937aa1f93c70bce79974c8078cdc1d8140a395",
+    "tokenizers.py": "a4ac90ca93bf7b8d0e27e87ad0c725f418e8e5daabc9786ac577f6077b85481a",
+    "train_infonce.py": "241db65f74ed053873b2daa4c649d311b8781508adca0f2c9c23f289ba9ab475",
+    "train_m1a_seg.py": "c0539cceb19fa49f40c04e1f5852dd05c9dced1d8839af263028fbcd28ebc5ac",
+    "train_mb.py": "1a4953ec15bbb660f3ed098834357fbecdeec852f1d8de6b0fd48780938ee901"
+  },
+  "this_script_sha256": "afa0f3f08acb6d81d3b76adb96a7bf95d0c60b95f0f6c51e197760ccf3b569d1",
+  "live_src_sha256_for_record": {
+    "train_mb.py": "1a4953ec15bbb660f3ed098834357fbecdeec852f1d8de6b0fd48780938ee901",
+    "eval_metrics.py": "c5b941171aa90103463a7e1e1b937aa1f93c70bce79974c8078cdc1d8140a395",
+    "train_infonce.py": "241db65f74ed053873b2daa4c649d311b8781508adca0f2c9c23f289ba9ab475",
+    "train_m1a_seg.py": "c0539cceb19fa49f40c04e1f5852dd05c9dced1d8839af263028fbcd28ebc5ac",
+    "tokenizers.py": "a4ac90ca93bf7b8d0e27e87ad0c725f418e8e5daabc9786ac577f6077b85481a"
+  },
+  "n_ch": 208,
+  "heldout_segments_per_story": {
+    "0": 277,
+    "1": 573,
+    "2": 934,
+    "3": 1510
+  },
+  "design": {
+    "SEEN": {
+      "holdout_story": "3",
+      "eval_story_arg": "0",
+      "calib_stories_arg": "",
+      "calib_story_set": [
+        "1",
+        "2"
+      ],
+      "eval_n": 277,
+      "calib_pool_incl_val": 1507,
+      "eval_sha": "9d66da4ee9bf125457218714df025186e6f981777ead38684a0990b2e3e9ac6d",
+      "val_sha": "a56b1c2a41b86b42e16b59a930c93ae0e553e5d38ce17281663c08380cd9b3d0",
+      "calib_first_k_sha": {
+        "100": "2c4962ccc0abd6d2d66994fd8b6e7945a3b165eb468beec9114e7808a4951808",
+        "500": "1161a7b9f769cfb03a2d0831b95f2a2bdb125324ee285a50e527fa83d7c6a460"
+      },
+      "calib_first_k_Xsha": {
+        "100": "9cfa96fc70d9907e983f0d6c292be596a8a7f67546c9b308f5097f769a3bd447",
+        "500": "f52bc2479e093e8b858cb88790e42a9a95abc831cfad0811595c24e9848aad6f"
+      },
+      "k_feasible": [
+        100,
+        500
+      ]
+    },
+    "UNSEEN": {
+      "holdout_story": "0",
+      "eval_story_arg": "",
+      "calib_stories_arg": "",
+      "calib_story_set": [
+        "1",
+        "2",
+        "3"
+      ],
+      "eval_n": 277,
+      "calib_pool_incl_val": 3017,
+      "eval_sha": "9d66da4ee9bf125457218714df025186e6f981777ead38684a0990b2e3e9ac6d",
+      "val_sha": "391fed53d2851c2cb85dbbd0a071653c94432d116accbc27d490845a88560b42",
+      "calib_first_k_sha": {
+        "100": "0d897da2b4c3561684aec7dd4403a5e281504fed4feb5d0cba31a731a2174aed",
+        "500": "e8d242e557f6319640f2bd62b8e5e401e27c48f4e6d4ba2c35b12ea6c4769322",
+        "2000": "a0800e7a3656613cf86623a16a7a0734408cf4b59980dbca4f749302b5f788e5"
+      },
+      "calib_first_k_Xsha": {
+        "100": "ae4f9136211ac154cb858f82dec01c48fd914200e1100dd667040d09fa09e6b7",
+        "500": "2bc00bac31749db7c2b08a5b075503b3eda51536dc5ecf23cc4d8111c29bf67b",
+        "2000": "2db3ea3fcd6680198a19f8f60c1494ef13d35f6a2e2e3c909ab3cb0110ad1b72"
+      },
+      "k_feasible": [
+        100,
+        500,
+        2000
+      ]
+    },
+    "MATCHED": {
+      "holdout_story": "0",
+      "eval_story_arg": "",
+      "calib_stories_arg": "1,2",
+      "calib_story_set": [
+        "1",
+        "2"
+      ],
+      "eval_n": 277,
+      "calib_pool_incl_val": 1507,
+      "eval_sha": "9d66da4ee9bf125457218714df025186e6f981777ead38684a0990b2e3e9ac6d",
+      "val_sha": "a56b1c2a41b86b42e16b59a930c93ae0e553e5d38ce17281663c08380cd9b3d0",
+      "calib_first_k_sha": {
+        "100": "2c4962ccc0abd6d2d66994fd8b6e7945a3b165eb468beec9114e7808a4951808",
+        "500": "1161a7b9f769cfb03a2d0831b95f2a2bdb125324ee285a50e527fa83d7c6a460"
+      },
+      "calib_first_k_Xsha": {
+        "100": "9cfa96fc70d9907e983f0d6c292be596a8a7f67546c9b308f5097f769a3bd447",
+        "500": "f52bc2479e093e8b858cb88790e42a9a95abc831cfad0811595c24e9848aad6f"
+      },
+      "k_feasible": [
+        100,
+        500
+      ]
+    }
+  },
+  "scratch_quota": {
+    "source": "myquota",
+    "min_free_gb": 0.2,
+    "min_free_files": 1000,
+    "raw": "/scratch     $SCRATCH          NO/YES       5.00TB/5.00M         5.00TB(99.94%)/4757616(95.00%)",
+    "alloc_gb": 5000.0,
+    "used_pct": 99.94,
+    "free_gb_est": 3.0,
+    "free_files": 242384,
+    "status": "measured",
+    "write_probe_16MiB": "ok"
+  },
+  "backend": {
+    "pytorch": "2.6.0+cu124",
+    "cuda_available": true,
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "deterministic_algorithms": false,
+    "gpu_name": "NVIDIA H200",
+    "conv_step_s_median": 0.00803641602396965,
+    "conv_step_s_all": [
+      2.2715,
+      0.01332,
+      0.00807,
+      0.00804,
+      0.00804,
+      0.00802,
+      0.00804
+    ],
+    "max_step_s": 0.2,
+    "problems": []
+  },
+  "problems": [],
+  "status": "PASS",
+  "elapsed_s": 19.6
+}

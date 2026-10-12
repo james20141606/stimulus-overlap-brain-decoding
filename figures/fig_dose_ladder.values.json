@@ -1,0 +1,52 @@
+{
+ "source": "scripts/check_paper_numbers.py pins (one-bit arm 4401-4408; Dmid 4502; Dfull 4501) <- cluster logs via scripts/abc_decomposition.py",
+ "runs": {
+  "Cprime": {
+   "4401": 46.6,
+   "4403": 46.35,
+   "4405": 44.64
+  },
+  "D": {
+   "4402": 48.42,
+   "4404": 49.23,
+   "4406": 48.38,
+   "4407": 47.66,
+   "4408": 47.61
+  }
+ },
+ "ladder": {
+  "Dmid_4502": [
+   0.3,
+   46.63
+  ],
+  "Dfull_4501": [
+   1.0,
+   48.86
+  ]
+ },
+ "curve": [
+  [
+   0.0,
+   "45.86"
+  ],
+  [
+   0.3,
+   "46.63"
+  ],
+  [
+   0.59,
+   "48.26"
+  ],
+  [
+   1.0,
+   "48.86"
+  ]
+ ],
+ "derived": {
+  "C_mean": "45.86",
+  "D_mean": "48.26",
+  "mid_dose_exposure": "+0.77",
+  "full_dose_exposure": "+3.00",
+  "monotone": true
+ }
+}

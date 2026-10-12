@@ -1,0 +1,176 @@
+{
+  "tag": "mb1z_calmatch_story0_s11",
+  "test_subject": "11",
+  "eval_story": "0",
+  "seen_holdout": "3",
+  "calib_stories": "1,2",
+  "seed": 0,
+  "host": "gpu-node",
+  "slurm_job": "18450775",
+  "slurm_array": "18404006",
+  "slurm_task": "4",
+  "time": "2026-09-24T15:13:20-0400",
+  "inputs": {
+    "trial_metadata.tsv": "b36f9652b07638ddc84330444ffdc1f2192d2c15c0efd4971ec8988c0912179e",
+    "ctx": {
+      "path": "$SCRATCH/project/results/m0/masc_gpt2_contextual.npy",
+      "sha256": "ad1e9d83051d190c942afe2d130a6ca36d4229b6bad9ec0f1555aac1b5f04f5c"
+    },
+    "ctx_meta": {
+      "path": "$SCRATCH/project/results/m0/masc_gpt2_contextual_meta.json",
+      "sha256": "268f58f17cffe2544ca9b599053084f225b4086232187750ed6c5f3a59a65534"
+    },
+    "epochs_data.npy": {
+      "size": 32532864128,
+      "mtime": 1777621540,
+      "sha256_first_256MiB": "f0e1b9c8c16a9e479cd3c12619a2568eb223aee6714345eef414eccb9dba0ef9"
+    }
+  },
+  "pinned_src_sha256": {
+    "eval_metrics.py": "c5b941171aa90103463a7e1e1b937aa1f93c70bce79974c8078cdc1d8140a395",
+    "tokenizers.py": "a4ac90ca93bf7b8d0e27e87ad0c725f418e8e5daabc9786ac577f6077b85481a",
+    "train_infonce.py": "241db65f74ed053873b2daa4c649d311b8781508adca0f2c9c23f289ba9ab475",
+    "train_m1a_seg.py": "c0539cceb19fa49f40c04e1f5852dd05c9dced1d8839af263028fbcd28ebc5ac",
+    "train_mb.py": "1a4953ec15bbb660f3ed098834357fbecdeec852f1d8de6b0fd48780938ee901"
+  },
+  "this_script_sha256": "afa0f3f08acb6d81d3b76adb96a7bf95d0c60b95f0f6c51e197760ccf3b569d1",
+  "live_src_sha256_for_record": {
+    "train_mb.py": "1a4953ec15bbb660f3ed098834357fbecdeec852f1d8de6b0fd48780938ee901",
+    "eval_metrics.py": "c5b941171aa90103463a7e1e1b937aa1f93c70bce79974c8078cdc1d8140a395",
+    "train_infonce.py": "241db65f74ed053873b2daa4c649d311b8781508adca0f2c9c23f289ba9ab475",
+    "train_m1a_seg.py": "c0539cceb19fa49f40c04e1f5852dd05c9dced1d8839af263028fbcd28ebc5ac",
+    "tokenizers.py": "a4ac90ca93bf7b8d0e27e87ad0c725f418e8e5daabc9786ac577f6077b85481a"
+  },
+  "n_ch": 208,
+  "heldout_segments_per_story": {
+    "0": 539,
+    "1": 1147,
+    "2": 1878,
+    "3": 2989
+  },
+  "design": {
+    "SEEN": {
+      "holdout_story": "3",
+      "eval_story_arg": "0",
+      "calib_stories_arg": "",
+      "calib_story_set": [
+        "1",
+        "2"
+      ],
+      "eval_n": 539,
+      "calib_pool_incl_val": 3025,
+      "eval_sha": "48633611746e1b2d97e7b6efa9f1de962f84ab3e987592032b0d85c468b8038c",
+      "val_sha": "a9e517613e9f2b772456b6ca86a5f8a2b457602f1b71f1becebb0216596b026a",
+      "calib_first_k_sha": {
+        "100": "3f9f8216c3ffe26d8f32cac874c605cc97291d83434da9a0ba88da45303a035f",
+        "500": "4b55e8d59b45ae6b47d5fd42d6331201de1d8b9c0bd5448e335d66b86788ee7b",
+        "2000": "b9f35f3c3376f9b833daa80abc1c90f472a31c0a431d4701deccb6cce414df18"
+      },
+      "calib_first_k_Xsha": {
+        "100": "6413fb192b500dd5f7c7e1b382461e6920ea3bd4338d028924e2fe50825b8080",
+        "500": "2b08d099700a367a48f7797aae57849e6f1f6cefdf7c785525c8d41561cc10f9",
+        "2000": "4eb31f02dc87570f67ebe7199c0a45c29df7a7bed543389bc84cc0feb935824c"
+      },
+      "k_feasible": [
+        100,
+        500,
+        2000
+      ]
+    },
+    "UNSEEN": {
+      "holdout_story": "0",
+      "eval_story_arg": "",
+      "calib_stories_arg": "",
+      "calib_story_set": [
+        "1",
+        "2",
+        "3"
+      ],
+      "eval_n": 539,
+      "calib_pool_incl_val": 6014,
+      "eval_sha": "48633611746e1b2d97e7b6efa9f1de962f84ab3e987592032b0d85c468b8038c",
+      "val_sha": "e4cbc055ef2742c26a855d8e223a0c8c9fccd3cdeee1200a68c14e42029157c8",
+      "calib_first_k_sha": {
+        "100": "16c17adbd37d6fcff8c214af7b25f2e1b39c84a01e66b5a616946be13eb630a4",
+        "500": "2d87c9d48711e3396b1baef6dc87b995d56ff30320fb010d31140c7f3b82299b",
+        "2000": "b510424b1faf166fde896031fc4077e9eb76a5a74f14dcd924f6d06e28cd6b41"
+      },
+      "calib_first_k_Xsha": {
+        "100": "dea8bf03bc358f2208bc40143e4816c48a37a1fa47f62de3c54d092bb89c54a2",
+        "500": "39c355023af27465c4ae3ff7f6b4cfe5cc2d662ecdb6354351315162953f4886",
+        "2000": "a4605d6ba7a48b9169b23b5d4df315f69a4edbf03a4a544d6c95e1210c9ae5b9"
+      },
+      "k_feasible": [
+        100,
+        500,
+        2000
+      ]
+    },
+    "MATCHED": {
+      "holdout_story": "0",
+      "eval_story_arg": "",
+      "calib_stories_arg": "1,2",
+      "calib_story_set": [
+        "1",
+        "2"
+      ],
+      "eval_n": 539,
+      "calib_pool_incl_val": 3025,
+      "eval_sha": "48633611746e1b2d97e7b6efa9f1de962f84ab3e987592032b0d85c468b8038c",
+      "val_sha": "a9e517613e9f2b772456b6ca86a5f8a2b457602f1b71f1becebb0216596b026a",
+      "calib_first_k_sha": {
+        "100": "3f9f8216c3ffe26d8f32cac874c605cc97291d83434da9a0ba88da45303a035f",
+        "500": "4b55e8d59b45ae6b47d5fd42d6331201de1d8b9c0bd5448e335d66b86788ee7b",
+        "2000": "b9f35f3c3376f9b833daa80abc1c90f472a31c0a431d4701deccb6cce414df18"
+      },
+      "calib_first_k_Xsha": {
+        "100": "6413fb192b500dd5f7c7e1b382461e6920ea3bd4338d028924e2fe50825b8080",
+        "500": "2b08d099700a367a48f7797aae57849e6f1f6cefdf7c785525c8d41561cc10f9",
+        "2000": "4eb31f02dc87570f67ebe7199c0a45c29df7a7bed543389bc84cc0feb935824c"
+      },
+      "k_feasible": [
+        100,
+        500,
+        2000
+      ]
+    }
+  },
+  "scratch_quota": {
+    "source": "myquota",
+    "min_free_gb": 0.2,
+    "min_free_files": 1000,
+    "raw": "/scratch     $SCRATCH          NO/YES       5.00TB/5.00M         5.00TB(99.94%)/4757653(95.00%)",
+    "alloc_gb": 5000.0,
+    "used_pct": 99.94,
+    "free_gb_est": 3.0,
+    "free_files": 242347,
+    "status": "measured",
+    "write_probe_16MiB": "ok"
+  },
+  "backend": {
+    "pytorch": "2.6.0+cu124",
+    "cuda_available": true,
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "deterministic_algorithms": false,
+    "gpu_name": "NVIDIA H200",
+    "conv_step_s_median": 0.008059212006628513,
+    "conv_step_s_all": [
+      2.02029,
+      0.01336,
+      0.00811,
+      0.00806,
+      0.00804,
+      0.00805,
+      0.00806
+    ],
+    "max_step_s": 0.2,
+    "problems": []
+  },
+  "problems": [],
+  "status": "PASS",
+  "elapsed_s": 23.2
+}

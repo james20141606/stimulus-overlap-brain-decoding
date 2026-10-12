@@ -1,0 +1,11 @@
+{
+  "evaluation_stimuli": [
+    "lw1"
+  ],
+  "fitting_stimuli": [
+    "The_Black_Willow",
+    "cable_spool_fort",
+    "easy_money"
+  ],
+  "rule": "no stimulus appears in both partitions; combine with a subject holdout for a design that is disjoint in both subject and stimulus"
+}

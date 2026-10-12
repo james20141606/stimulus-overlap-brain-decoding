@@ -1,0 +1,134 @@
+{
+ "source": "results/interaction_receipt.json",
+ "generated_utc": "2026-09-21T07:26:46Z",
+ "bootstrap": {
+  "draws": 20000,
+  "function": "mb_conditions.ci",
+  "interval": "percentile 2.5/97.5",
+  "seed": 0
+ },
+ "budgets": {
+  "100": {
+   "cells": [
+    {
+     "cell": "rr",
+     "mean": 0.0433,
+     "ci95": [
+      0.009,
+      0.0806
+     ],
+     "excludes_zero": true
+    },
+    {
+     "cell": "sr",
+     "mean": 0.0335,
+     "ci95": [
+      -0.0161,
+      0.0829
+     ],
+     "excludes_zero": false
+    },
+    {
+     "cell": "rs",
+     "mean": 0.013,
+     "ci95": [
+      -0.0111,
+      0.0371
+     ],
+     "excludes_zero": false
+    },
+    {
+     "cell": "ss",
+     "mean": 0.0195,
+     "ci95": [
+      -0.019,
+      0.0547
+     ],
+     "excludes_zero": false
+    }
+   ],
+   "n": 10,
+   "split_main": {
+    "mean": -0.0222,
+    "ci95": [
+     -0.0709,
+     0.0263
+    ],
+    "verdict": "covers 0",
+    "per_subject": [
+     0.0055,
+     -0.005,
+     0.106,
+     -0.1365,
+     -0.1435,
+     0.0515,
+     -0.068,
+     0.0155,
+     0.039,
+     -0.086
+    ]
+   }
+  },
+  "500": {
+   "cells": [
+    {
+     "cell": "rr",
+     "mean": 0.0135,
+     "ci95": [
+      0.0012,
+      0.0262
+     ],
+     "excludes_zero": true
+    },
+    {
+     "cell": "sr",
+     "mean": 0.0241,
+     "ci95": [
+      0.0049,
+      0.0451
+     ],
+     "excludes_zero": true
+    },
+    {
+     "cell": "rs",
+     "mean": 0.01,
+     "ci95": [
+      -0.0035,
+      0.0244
+     ],
+     "excludes_zero": false
+    },
+    {
+     "cell": "ss",
+     "mean": -0.0062,
+     "ci95": [
+      -0.0217,
+      0.0109
+     ],
+     "excludes_zero": false
+    }
+   ],
+   "n": 10,
+   "split_main": {
+    "mean": -0.0169,
+    "ci95": [
+     -0.0313,
+     -0.0009
+    ],
+    "verdict": "excludes 0",
+    "per_subject": [
+     -0.016,
+     0.0315,
+     -0.0045,
+     -0.045,
+     -0.017,
+     -0.016,
+     0.0165,
+     -0.034,
+     -0.0495,
+     -0.035
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,32 @@
+\begin{tabular}{lcc}
+\toprule
+ & $k{=}100$ & $k{=}500$ \\
+\midrule
+\multicolumn{3}{l}{\emph{(a) Clean stimulus/story cell (all four stories in pretraining), seed 0}}\\
+clean stimulus/story cell & $+$0.013 {\scriptsize[$-$0.012, $+$0.037]} & $+$0.010 {\scriptsize[$-$0.003, $+$0.025]} \\
+standard cell (Table~\ref{tab:factorial}) & $+$0.043 {\scriptsize[$+$0.009, $+$0.081]}$^{*}$ & $+$0.014 {\scriptsize[$+$0.001, $+$0.026]}$^{*}$ \\
+\quad split main $M_{\mathrm{split}}$ (clean) & $-$0.025 {\scriptsize[$-$0.078, $+$0.023]} & $-$0.009 {\scriptsize[$-$0.021, $+$0.001]} \\
+\quad guard main $M_{\mathrm{guard}}$ (clean) & $-$0.005 {\scriptsize[$-$0.016, $+$0.005]} & $+$0.005 {\scriptsize[$-$0.001, $+$0.014]} \\
+\quad three-way $I$ (clean) & $+$0.010 {\scriptsize[$-$0.010, $+$0.032]} & $-$0.011 {\scriptsize[$-$0.029, $+$0.002]} \\
+\quad $M_{\mathrm{split}}-M_{\mathrm{guard}}$ (clean) & $-$0.021 {\scriptsize[$-$0.078, $+$0.035]} & $-$0.014 {\scriptsize[$-$0.028, $-$0.002]}$^{*}$ \\
+\midrule\multicolumn{3}{l}{\emph{(b) Standard cell over three pretraining seeds}}\\
+seed 0 (published) & $+$0.043 {\scriptsize[$+$0.009, $+$0.081]}$^{*}$ & $+$0.014 {\scriptsize[$+$0.001, $+$0.026]}$^{*}$ \\
+seed 1 & $+$0.055 {\scriptsize[$+$0.020, $+$0.093]}$^{*}$ & $+$0.023 {\scriptsize[$+$0.004, $+$0.040]}$^{*}$ \\
+seed 2 & $+$0.047 {\scriptsize[$+$0.014, $+$0.081]}$^{*}$ & $+$0.018 {\scriptsize[$-$0.000, $+$0.035]} \\
+seed-averaged & $+$0.048 {\scriptsize[$+$0.024, $+$0.071]}$^{*}$ & $+$0.018 {\scriptsize[$+$0.005, $+$0.029]}$^{*}$ \\
+SD within subject across seeds / between subjects & 0.053 / 0.040 & 0.022 / 0.021 \\
+\midrule\multicolumn{3}{l}{\emph{(c) Clean stimulus/story cell over three seeds}}\\
+seed-averaged & $+$0.035 {\scriptsize[$+$0.013, $+$0.056]}$^{*}$ & $+$0.010 {\scriptsize[$-$0.001, $+$0.019]} \\
+clean $-$ standard, seed-averaged & $-$0.014 {\scriptsize[$-$0.032, $+$0.005]} & $-$0.008 {\scriptsize[$-$0.017, $+$0.000]} \\
+\midrule\multicolumn{3}{l}{\emph{(d) Guard radius, seed-averaged over the new runs ($\pm5$ / $\pm10$ / $\pm20$\,s)}}\\
+standard (seeds 1,2) & $+$0.051$^{*}$ / $+$0.051$^{*}$ / $+$0.051$^{*}$ & $+$0.021$^{*}$ / $+$0.021$^{*}$ / $+$0.021$^{*}$ \\
+clean stimulus/story (seeds 0,1,2) & $+$0.035$^{*}$ / $+$0.035$^{*}$ / $+$0.035$^{*}$ & $+$0.010 / $+$0.010 / $+$0.010 \\
+recording guard, story split (seeds 1,2) & $+$0.045$^{*}$ / $+$0.045$^{*}$ / $+$0.045$^{*}$ & $+$0.010 / $+$0.010 / $+$0.010 \\
+stimulus guard, recording split (seeds 1,2) & $+$0.051$^{*}$ / $+$0.051$^{*}$ / $+$0.051$^{*}$ & $+$0.021$^{*}$ / $+$0.021$^{*}$ / $+$0.021$^{*}$ \\
+\midrule\multicolumn{3}{l}{\emph{(e) Single-ingredient ablation, seed 0 ($\Delta=T+E$)}}\\
+standard: trunk $T$ (residual-free, no endpoint) & $+$0.022 {\scriptsize[$-$0.016, $+$0.063]} & $+$0.020 {\scriptsize[$+$0.005, $+$0.036]}$^{*}$ \\
+standard: endpoint branch $E$ & $+$0.022 {\scriptsize[$+$0.007, $+$0.039]}$^{*}$ & $-$0.006 {\scriptsize[$-$0.021, $+$0.006]} \\
+clean stimulus/story: trunk $T$ (residual-free, no endpoint) & $+$0.012 {\scriptsize[$-$0.016, $+$0.040]} & $+$0.010 {\scriptsize[$-$0.006, $+$0.028]} \\
+clean stimulus/story: endpoint branch $E$ & $+$0.001 {\scriptsize[$-$0.022, $+$0.030]} & $-$0.000 {\scriptsize[$-$0.005, $+$0.005]} \\
+\bottomrule
+\end{tabular}

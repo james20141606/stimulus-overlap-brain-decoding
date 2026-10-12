@@ -1,0 +1,72 @@
+{
+  "note": "Review-only sensitivity from shipped 2026-09-21 receipt; t intervals assume independent subject contrasts; sign flips assume symmetric null. Not pre-registered, not a replacement confirmatory result. No new training.",
+  "source": "results/interaction_receipt.json",
+  "contrasts": {
+    "100_guard_main": {
+      "mean": -0.0016499999999999848,
+      "se": 0.013821088958544475,
+      "t9_ci95": [
+        -0.03291547313519408,
+        0.02961547313519411
+      ],
+      "two_sided_signflip_p": 0.908203125,
+      "positive": 6,
+      "n": 10
+    },
+    "100_split_main": {
+      "mean": -0.022150000000000003,
+      "se": 0.02625579830141228,
+      "t9_ci95": [
+        -0.08154473791812791,
+        0.0372447379181279
+      ],
+      "two_sided_signflip_p": 0.421875,
+      "positive": 5,
+      "n": 10
+    },
+    "100_split_minus_guard": {
+      "mean": -0.020500000000000018,
+      "se": 0.03056223159391342,
+      "t9_ci95": [
+        -0.08963656613579242,
+        0.04863656613579238
+      ],
+      "two_sided_signflip_p": 0.52734375,
+      "positive": 3,
+      "n": 10
+    },
+    "500_guard_main": {
+      "mean": -0.0028000000000000026,
+      "se": 0.005573349282273831,
+      "t9_ci95": [
+        -0.015407791092340726,
+        0.009807791092340722
+      ],
+      "two_sided_signflip_p": 0.62109375,
+      "positive": 5,
+      "n": 10
+    },
+    "500_split_main": {
+      "mean": -0.016900000000000005,
+      "se": 0.00822320564689411,
+      "t9_ci95": [
+        -0.03550218221656105,
+        0.0017021822165610365
+      ],
+      "two_sided_signflip_p": 0.0625,
+      "positive": 2,
+      "n": 10
+    },
+    "500_split_minus_guard": {
+      "mean": -0.014100000000000001,
+      "se": 0.007211795892841117,
+      "t9_ci95": [
+        -0.030414214561561785,
+        0.0022142145615617823
+      ],
+      "two_sided_signflip_p": 0.0859375,
+      "positive": 1,
+      "n": 10
+    }
+  }
+}

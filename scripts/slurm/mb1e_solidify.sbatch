@@ -1,0 +1,36 @@
+#!/bin/bash
+#SBATCH --job-name=bci-mb1e
+#SBATCH --output=$SCRATCH/project/logs/mb/%x-%j.out
+#SBATCH --error=$SCRATCH/project/logs/mb/%x-%j.err
+#SBATCH --nodes=1 --ntasks=1 --cpus-per-task=8 --mem=200G --gres=gpu:1 --time=10:00:00
+#SBATCH --account=CLUSTER_ACCOUNT
+#SBATCH --partition=gpuA_partition
+
+set -euo pipefail
+export PYTHONUNBUFFERED=1
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+PY=$SCRATCH/envs/analysis-env/bin/python
+CODE=$SCRATCH/project/src
+R=$SCRATCH/project
+OUT=$R/bci_foundation/results/mb
+M0=$R/bci_foundation/results/m0
+mkdir -p "$OUT"
+echo "[INFO] host=$(hostname) date=$(date -Is) job=${SLURM_JOB_ID:-NA}"
+nvidia-smi --query-gpu=name,memory.total --format=csv,noheader | head -1
+
+# MB-1e: SOLIDIFY the MB-1d finding (dynamic ARCH > conv on full-res) over ALL 10 MASC
+# subjects LOSO. Full-res decim=1, minimally averaged seg_s=1.0/min_words=1.
+for S in 01 02 03 05 07 08 09 10 11 13; do
+  if [ -f "$OUT/result_mb1e_fullres_s${S}.json" ]; then
+    echo "[$(date -Is)] [skip] subject $S already done"; continue
+  fi
+  echo "[$(date -Is)] === held subject $S (fullres solidify) ==="
+  $PY "$CODE/train_mb.py" --out_dir "$OUT" \
+      --data_dir "$R/meg_papers/data/meg_masc_full" \
+      --ctx "$M0/masc_gpt2_contextual.npy" --ctx_meta "$M0/masc_gpt2_contextual_meta.json" \
+      --test_subject "$S" --variants conv,dynamic_big,dynamic_big_noflow --layer 6 \
+      --decim 1 --seg_s 1.0 --min_words 1 --klist 500 --pre_epochs 80 --adapt_epochs 120 \
+      --tag "mb1e_fullres_s${S}"
+done
+
+echo "[$(date -Is)] DONE"

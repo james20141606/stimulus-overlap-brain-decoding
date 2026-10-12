@@ -1,0 +1,15 @@
+{
+  "source": "cluster:$SCRATCH/project/logs/m1/mixed/<arm>_<seed>.log, final 'Test Summary' block; read 2026-09-22",
+  "readout": "top-10 (%) = 100 - wer(%); best = minimum test wer over epochs; in all eight logs the minimum is also the last epoch of the final summary block (patience stop)",
+  "pool": "every log prints exactly one '7140 negatives selected'",
+  "runs": {
+    "Cprime_4401": {"wer": "53.403", "epoch": 4, "line": 3354, "chain": "15599825"},
+    "D_4402":      {"wer": "51.576", "epoch": 3, "line": 4847, "chain": "15630774"},
+    "Cprime_4403": {"wer": "53.655", "epoch": 5, "line": 4014, "chain": "15639245/15659449"},
+    "D_4404":      {"wer": "50.770", "epoch": 3, "line": 4062, "chain": "15659449"},
+    "Cprime_4405": {"wer": "55.364", "epoch": 3, "line": 3971, "chain": "15815525"},
+    "D_4406":      {"wer": "51.618", "epoch": 4, "line": 4062, "chain": "15815525"},
+    "D_4407":      {"wer": "52.339", "epoch": 5, "line": 4878, "chain": "15981569 (realization 1, BM_TRAIN_FRAC_SEED=1)"},
+    "D_4408":      {"wer": "52.388", "epoch": 4, "line": 4854, "chain": "15981569 (realization 2, BM_TRAIN_FRAC_SEED=2)"}
+  }
+}
